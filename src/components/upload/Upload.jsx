@@ -30,10 +30,9 @@ const Upload = () => {
   const handleSubmit = async e => {
     e.preventDefault();
 
-    // TODO: Send the text input and file to your database
+    // TODO: Send file to database
 
     // TODO: Make a request to the GPT API
-    // const response = await axios.post(GPT_API_URL, { text: textInput });
 
     // TODO: Handle the response from the GPT API
     // setResponse(response.data.content);

@@ -12,7 +12,7 @@ const Gpt = () => {
 
     try {
     } catch (error) {}
-    const response = await fetch(apiUrl, {
+    const response = await fetch(`${apiUrl}/completions`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

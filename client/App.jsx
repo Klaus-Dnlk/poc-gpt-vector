@@ -1,6 +1,7 @@
+import React from 'react';
 import './App.css';
 import { Grid, Container } from '@mui/material';
-import Upload from './components/upload/Upload';
+import { Upload } from './components/upload/Upload';
 import Gpt from './components/request/Gpt';
 
 function App() {

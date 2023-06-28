@@ -23,6 +23,8 @@
     "koa-cors": "^0.0.16",
     "koa-logger": "^3.2.1",
     "langchain": "^0.0.96",
+    "netlify-cli": "^15.7.0",
+    "netlify-lambda": "^2.0.16",
     "nodemon": "^2.0.22",
     "openai": "^3.3.0",
     "pdf-parse": "^1.1.1",
@@ -30,13 +32,14 @@
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
     "react-scripts": "5.0.1",
+    "serverless-http": "^3.2.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "preview": "vite preview",
-    "build": "vite build",
+    "build": "nelify deploy --prod",
     "start-server": "nodemon ./server/index.js"
   },
   "eslintConfig": {

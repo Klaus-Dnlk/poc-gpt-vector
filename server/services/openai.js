@@ -15,7 +15,7 @@ class OpenAiService {
     this.model = new OpenAI({
       temperature: 0,
       verbose: true,
-      azureOpenAIApiKey: process.env.OPENAI_API_KEY,
+      openAIApiKey: process.env.OPENAI_API_KEY,
     });
 
     this.prompt = PromptTemplate.fromTemplate(`

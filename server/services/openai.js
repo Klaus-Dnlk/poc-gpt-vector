@@ -12,7 +12,11 @@ import { getFileLoader } from '../utils/documentLoader.js';
 
 class OpenAiService {
   constructor() {
-    this.model = new OpenAI({ temperature: 0, verbose: true });
+    this.model = new OpenAI({
+      temperature: 0,
+      verbose: true,
+      azureOpenAIApiKey: process.env.OPENAI_API_KEY,
+    });
 
     this.prompt = PromptTemplate.fromTemplate(`
     Current conversation:

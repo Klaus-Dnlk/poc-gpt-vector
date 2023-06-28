@@ -10,15 +10,24 @@ import { ConversationSummaryMemory } from 'langchain/memory';
 import { OpenAI } from 'langchain/llms/openai';
 import { getFileLoader } from '../utils/documentLoader.js';
 
+import { OpenAIApi } from 'openai';
+
 class OpenAiService {
   constructor() {
+    // this.model = new OpenAI({
+    //   modelName: 'text-davinci-003',
+    //   temperature: 0,
+    //   openAIApiKey: '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',
+    // });
+
     this.model = new OpenAI({
       modelName: 'text-davinci-003',
       temperature: 0,
-      openAIApiKey: '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',
+      openAIApiKey: process.env.OPENAI_API_KEY,
     });
+
     console.log('process env: ', process.env.OPENAI_API_KEY);
-    console.log('open key: ', this.model.openAIApiKey);
+    console.log('openAIApiKey: ', this.model.openAIApiKey);
 
     this.prompt = PromptTemplate.fromTemplate(`
     Current conversation:

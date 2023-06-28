@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5050';
+const BASE_URL = 'https://poc-gpt-pilot-back2.onrender.com';
 
 const requestClient = axios.create({
   baseURL: BASE_URL,

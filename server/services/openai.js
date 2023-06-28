@@ -13,9 +13,9 @@ import { getFileLoader } from '../utils/documentLoader.js';
 class OpenAiService {
   constructor() {
     this.model = new OpenAI({
+      modelName: 'text-davinci-003',
       temperature: 0,
-      verbose: true,
-      // openAIApiKey: process.env.OPENAI_API_KEY,
+      openAIApiKey: process.env.OPENAI_API_KEY,
     });
 
     this.prompt = PromptTemplate.fromTemplate(`

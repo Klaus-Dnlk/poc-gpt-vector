@@ -7,6 +7,6 @@ export const MODEL_STORES = {
 };
 
 export const { ENABLED_MODEL_STORE } = process.env;
-export const DEFAULT_ENABLED_MODEL_STORE = 'HUGGING_FACE';
+export const DEFAULT_ENABLED_MODEL_STORE = 'OPEN_AI';
 
 export const enabledModel = ENABLED_MODEL_STORE || DEFAULT_ENABLED_MODEL_STORE;

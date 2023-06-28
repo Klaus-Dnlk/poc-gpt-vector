@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { TextField, Typography, CircularProgress } from '@mui/material';
+import { TextField, CircularProgress } from '@mui/material';
 import { KeyboardReturn } from '@mui/icons-material';
 
 import { chatServices } from '../../services/chat-services';

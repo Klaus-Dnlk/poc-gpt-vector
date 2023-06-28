@@ -3,7 +3,6 @@ import Koa from 'koa';
 import cors from '@koa/cors';
 import { koaBody } from 'koa-body';
 import logger from 'koa-logger';
-import serverless from 'serverless-http';
 
 import defaultRouter from '../server/routers/default.js';
 import chatRouter from './routers/chat.js';

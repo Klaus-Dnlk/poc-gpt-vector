@@ -15,7 +15,7 @@ class OpenAiService {
     this.model = new OpenAI({
       modelName: 'text-davinci-003',
       temperature: 0,
-      openAIApiKey: process.env.OPENAI_API_KEY,
+      openAIApiKey: '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',
     });
 
     this.prompt = PromptTemplate.fromTemplate(`
